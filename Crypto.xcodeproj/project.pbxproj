@@ -45,6 +45,7 @@
 		6BC244412B64E1C60021E863 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC244402B64E1C60021E863 /* String.swift */; };
 		6BC244432B6501030021E863 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC244422B6501030021E863 /* ChartView.swift */; };
 		6BC244452B654C580021E863 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC244442B654C580021E863 /* Date.swift */; };
+		6BEE86522B657B70003CDAA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE86512B657B6F003CDAA3 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		6BC244402B64E1C60021E863 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6BC244422B6501030021E863 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		6BC244442B654C580021E863 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		6BEE86512B657B6F003CDAA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				6BB4B15B2B60F30E0028B8CA /* Components */,
 				6BC244352B63C8530021E863 /* Detail */,
+				6BEE864F2B657B26003CDAA3 /* Settings */,
 				6BB4B1552B60F1F00028B8CA /* Home */,
 			);
 			path = Core;
@@ -281,6 +284,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6BEE864F2B657B26003CDAA3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86502B657B53003CDAA3 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6BEE86502B657B53003CDAA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE86512B657B6F003CDAA3 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +376,7 @@
 				6BC244432B6501030021E863 /* ChartView.swift in Sources */,
 				6BC244212B6282400021E863 /* StatisticView.swift in Sources */,
 				6BC2441D2B6269640021E863 /* UIApplication.swift in Sources */,
+				6BEE86522B657B70003CDAA3 /* SettingsView.swift in Sources */,
 				6BC244302B6395710021E863 /* PortfolioContainer.xcdatamodeld in Sources */,
 				6BC244452B654C580021E863 /* Date.swift in Sources */,
 				6BC244172B6237000021E863 /* CoinImageViewModel.swift in Sources */,
