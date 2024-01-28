@@ -16,20 +16,30 @@ struct SettingsView: View {
     let personURL = URL(string: "https://www.github.com/udayg24")!
     
     var body: some View {
+        
         NavigationView{
-            List {
-                section1
-                section2
-                section3
-                section4
-            }
-            .accentColor(.blue)
-            .listStyle(GroupedListStyle())
-            .navigationTitle("Settings")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    XMark()
+            
+            
+            ZStack {
+                Color.theme.background.ignoresSafeArea()
+                List {
+                    section1
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    section2
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    section3
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    section4
+                        .listRowBackground(Color.theme.background.opacity(0.5))
                 }
+                .accentColor(.blue)
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Settings")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        XMark()
+                    }
+            }
             }
         }
     }
